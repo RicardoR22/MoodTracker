@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D13830B21B07626002060BE /* MoodDetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D13830A21B07626002060BE /* MoodDetailedViewController.swift */; };
+		8D9B38C621B9D0BD0089E056 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B38C421B9D0BD0089E056 /* Interface.storyboard */; };
+		8D9B38C821B9D0BE0089E056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B38C721B9D0BE0089E056 /* Assets.xcassets */; };
+		8D9B38CF21B9D0BE0089E056 /* WatchMoodTracker Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8D9B38CE21B9D0BE0089E056 /* WatchMoodTracker Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8D9B38D421B9D0BE0089E056 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B38D321B9D0BE0089E056 /* InterfaceController.swift */; };
+		8D9B38D621B9D0BE0089E056 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B38D521B9D0BE0089E056 /* ExtensionDelegate.swift */; };
+		8D9B38D821B9D0BF0089E056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B38D721B9D0BF0089E056 /* Assets.xcassets */; };
+		8D9B38DC21B9D0BF0089E056 /* WatchMoodTracker.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8D9B38C221B9D0BD0089E056 /* WatchMoodTracker.app */; };
+		8D9B38E521B9D16E0089E056 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD1AF32194F49000B113C1 /* MoodEntry.swift */; };
+		8D9B38E721B9D6970089E056 /* MoodRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B38E621B9D6970089E056 /* MoodRow.swift */; };
+		8D9B38E921B9D9A60089E056 /* MoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B38E821B9D9A60089E056 /* MoodController.swift */; };
+		8DAD1AE22194F31300B113C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD1AE12194F31300B113C1 /* AppDelegate.swift */; };
+		8DAD1AE42194F31300B113C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD1AE32194F31300B113C1 /* ViewController.swift */; };
+		8DAD1AE72194F31300B113C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DAD1AE52194F31300B113C1 /* Main.storyboard */; };
+		8DAD1AE92194F31500B113C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DAD1AE82194F31500B113C1 /* Assets.xcassets */; };
+		8DAD1AEC2194F31500B113C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DAD1AEA2194F31500B113C1 /* LaunchScreen.storyboard */; };
+		8DAD1AF42194F49000B113C1 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAD1AF32194F49000B113C1 /* MoodEntry.swift */; };
+		8DB7068421B713BF0030330B /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB7068321B713BF0030330B /* CalendarViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D9B38D021B9D0BE0089E056 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DAD1AD62194F31300B113C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D9B38CD21B9D0BE0089E056;
+			remoteInfo = "WatchMoodTracker Extension";
+		};
+		8D9B38DA21B9D0BF0089E056 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DAD1AD62194F31300B113C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D9B38C121B9D0BD0089E056;
+			remoteInfo = WatchMoodTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8D9B38E221B9D0BF0089E056 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8D9B38CF21B9D0BE0089E056 /* WatchMoodTracker Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D9B38E421B9D0BF0089E056 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8D9B38DC21B9D0BF0089E056 /* WatchMoodTracker.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8D13830A21B07626002060BE /* MoodDetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodDetailedViewController.swift; sourceTree = "<group>"; };
+		8D9B38C221B9D0BD0089E056 /* WatchMoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchMoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D9B38C521B9D0BD0089E056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8D9B38C721B9D0BE0089E056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D9B38C921B9D0BE0089E056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D9B38CE21B9D0BE0089E056 /* WatchMoodTracker Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchMoodTracker Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D9B38D321B9D0BE0089E056 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8D9B38D521B9D0BE0089E056 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8D9B38D721B9D0BF0089E056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D9B38D921B9D0BF0089E056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D9B38E621B9D6970089E056 /* MoodRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodRow.swift; sourceTree = "<group>"; };
+		8D9B38E821B9D9A60089E056 /* MoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodController.swift; sourceTree = "<group>"; };
+		8DAD1ADE2194F31300B113C1 /* MoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DAD1AE12194F31300B113C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DAD1AE32194F31300B113C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DAD1AE62194F31300B113C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DAD1AE82194F31500B113C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DAD1AEB2194F31500B113C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DAD1AED2194F31500B113C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DAD1AF32194F49000B113C1 /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
+		8DB7068321B713BF0030330B /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D9B38CB21B9D0BE0089E056 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DAD1ADB2194F31300B113C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D9B38C321B9D0BD0089E056 /* WatchMoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				8D9B38C421B9D0BD0089E056 /* Interface.storyboard */,
+				8D9B38C721B9D0BE0089E056 /* Assets.xcassets */,
+				8D9B38C921B9D0BE0089E056 /* Info.plist */,
+			);
+			path = WatchMoodTracker;
+			sourceTree = "<group>";
+		};
+		8D9B38D221B9D0BE0089E056 /* WatchMoodTracker Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8D9B38D321B9D0BE0089E056 /* InterfaceController.swift */,
+				8D9B38D521B9D0BE0089E056 /* ExtensionDelegate.swift */,
+				8D9B38D721B9D0BF0089E056 /* Assets.xcassets */,
+				8D9B38D921B9D0BF0089E056 /* Info.plist */,
+				8D9B38E621B9D6970089E056 /* MoodRow.swift */,
+				8D9B38E821B9D9A60089E056 /* MoodController.swift */,
+			);
+			path = "WatchMoodTracker Extension";
+			sourceTree = "<group>";
+		};
+		8DAD1AD52194F31300B113C1 = {
+			isa = PBXGroup;
+			children = (
+				8DAD1AE02194F31300B113C1 /* MoodTracker */,
+				8D9B38C321B9D0BD0089E056 /* WatchMoodTracker */,
+				8D9B38D221B9D0BE0089E056 /* WatchMoodTracker Extension */,
+				8DAD1ADF2194F31300B113C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DAD1ADF2194F31300B113C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DAD1ADE2194F31300B113C1 /* MoodTracker.app */,
+				8D9B38C221B9D0BD0089E056 /* WatchMoodTracker.app */,
+				8D9B38CE21B9D0BE0089E056 /* WatchMoodTracker Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DAD1AE02194F31300B113C1 /* MoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				8DAD1AE12194F31300B113C1 /* AppDelegate.swift */,
+				8DAD1AE32194F31300B113C1 /* ViewController.swift */,
+				8DAD1AE52194F31300B113C1 /* Main.storyboard */,
+				8DAD1AE82194F31500B113C1 /* Assets.xcassets */,
+				8DAD1AEA2194F31500B113C1 /* LaunchScreen.storyboard */,
+				8DAD1AED2194F31500B113C1 /* Info.plist */,
+				8DAD1AF32194F49000B113C1 /* MoodEntry.swift */,
+				8D13830A21B07626002060BE /* MoodDetailedViewController.swift */,
+				8DB7068321B713BF0030330B /* CalendarViewController.swift */,
+			);
+			path = MoodTracker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D9B38C121B9D0BD0089E056 /* WatchMoodTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D9B38E321B9D0BF0089E056 /* Build configuration list for PBXNativeTarget "WatchMoodTracker" */;
+			buildPhases = (
+				8D9B38C021B9D0BD0089E056 /* Resources */,
+				8D9B38E221B9D0BF0089E056 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D9B38D121B9D0BE0089E056 /* PBXTargetDependency */,
+			);
+			name = WatchMoodTracker;
+			productName = WatchMoodTracker;
+			productReference = 8D9B38C221B9D0BD0089E056 /* WatchMoodTracker.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8D9B38CD21B9D0BE0089E056 /* WatchMoodTracker Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D9B38E121B9D0BF0089E056 /* Build configuration list for PBXNativeTarget "WatchMoodTracker Extension" */;
+			buildPhases = (
+				8D9B38CA21B9D0BE0089E056 /* Sources */,
+				8D9B38CB21B9D0BE0089E056 /* Frameworks */,
+				8D9B38CC21B9D0BE0089E056 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchMoodTracker Extension";
+			productName = "WatchMoodTracker Extension";
+			productReference = 8D9B38CE21B9D0BE0089E056 /* WatchMoodTracker Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		8DAD1ADD2194F31300B113C1 /* MoodTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DAD1AF02194F31500B113C1 /* Build configuration list for PBXNativeTarget "MoodTracker" */;
+			buildPhases = (
+				8DAD1ADA2194F31300B113C1 /* Sources */,
+				8DAD1ADB2194F31300B113C1 /* Frameworks */,
+				8DAD1ADC2194F31300B113C1 /* Resources */,
+				8D9B38E421B9D0BF0089E056 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D9B38DB21B9D0BF0089E056 /* PBXTargetDependency */,
+			);
+			name = MoodTracker;
+			productName = MoodTracker;
+			productReference = 8DAD1ADE2194F31300B113C1 /* MoodTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DAD1AD62194F31300B113C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ricardo Rodriguez";
+				TargetAttributes = {
+					8D9B38C121B9D0BD0089E056 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8D9B38CD21B9D0BE0089E056 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8DAD1ADD2194F31300B113C1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 8DAD1AD92194F31300B113C1 /* Build configuration list for PBXProject "MoodTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DAD1AD52194F31300B113C1;
+			productRefGroup = 8DAD1ADF2194F31300B113C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DAD1ADD2194F31300B113C1 /* MoodTracker */,
+				8D9B38C121B9D0BD0089E056 /* WatchMoodTracker */,
+				8D9B38CD21B9D0BE0089E056 /* WatchMoodTracker Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D9B38C021B9D0BD0089E056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9B38C821B9D0BE0089E056 /* Assets.xcassets in Resources */,
+				8D9B38C621B9D0BD0089E056 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D9B38CC21B9D0BE0089E056 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9B38D821B9D0BF0089E056 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DAD1ADC2194F31300B113C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DAD1AEC2194F31500B113C1 /* LaunchScreen.storyboard in Resources */,
+				8DAD1AE92194F31500B113C1 /* Assets.xcassets in Resources */,
+				8DAD1AE72194F31300B113C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D9B38CA21B9D0BE0089E056 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D9B38D621B9D0BE0089E056 /* ExtensionDelegate.swift in Sources */,
+				8D9B38D421B9D0BE0089E056 /* InterfaceController.swift in Sources */,
+				8D9B38E521B9D16E0089E056 /* MoodEntry.swift in Sources */,
+				8D9B38E721B9D6970089E056 /* MoodRow.swift in Sources */,
+				8D9B38E921B9D9A60089E056 /* MoodController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DAD1ADA2194F31300B113C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DB7068421B713BF0030330B /* CalendarViewController.swift in Sources */,
+				8DAD1AE42194F31300B113C1 /* ViewController.swift in Sources */,
+				8DAD1AE22194F31300B113C1 /* AppDelegate.swift in Sources */,
+				8D13830B21B07626002060BE /* MoodDetailedViewController.swift in Sources */,
+				8DAD1AF42194F49000B113C1 /* MoodEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D9B38D121B9D0BE0089E056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D9B38CD21B9D0BE0089E056 /* WatchMoodTracker Extension */;
+			targetProxy = 8D9B38D021B9D0BE0089E056 /* PBXContainerItemProxy */;
+		};
+		8D9B38DB21B9D0BF0089E056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D9B38C121B9D0BD0089E056 /* WatchMoodTracker */;
+			targetProxy = 8D9B38DA21B9D0BF0089E056 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D9B38C421B9D0BD0089E056 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D9B38C521B9D0BD0089E056 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		8DAD1AE52194F31300B113C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DAD1AE62194F31300B113C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8DAD1AEA2194F31500B113C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DAD1AEB2194F31500B113C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D9B38DD21B9D0BF0089E056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = WatchMoodTracker_Extension;
+				INFOPLIST_FILE = WatchMoodTracker/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoRodriguez.MoodTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		8D9B38DE21B9D0BF0089E056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = WatchMoodTracker_Extension;
+				INFOPLIST_FILE = WatchMoodTracker/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoRodriguez.MoodTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		8D9B38DF21B9D0BF0089E056 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WatchMoodTracker Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoRodriguez.MoodTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		8D9B38E021B9D0BF0089E056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WatchMoodTracker Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoRodriguez.MoodTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		8DAD1AEE2194F31500B113C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8DAD1AEF2194F31500B113C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DAD1AF12194F31500B113C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoodTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoRodriguez.MoodTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8DAD1AF22194F31500B113C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoodTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoRodriguez.MoodTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D9B38E121B9D0BF0089E056 /* Build configuration list for PBXNativeTarget "WatchMoodTracker Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D9B38DF21B9D0BF0089E056 /* Debug */,
+				8D9B38E021B9D0BF0089E056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D9B38E321B9D0BF0089E056 /* Build configuration list for PBXNativeTarget "WatchMoodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D9B38DD21B9D0BF0089E056 /* Debug */,
+				8D9B38DE21B9D0BF0089E056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DAD1AD92194F31300B113C1 /* Build configuration list for PBXProject "MoodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DAD1AEE2194F31500B113C1 /* Debug */,
+				8DAD1AEF2194F31500B113C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DAD1AF02194F31500B113C1 /* Build configuration list for PBXNativeTarget "MoodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DAD1AF12194F31500B113C1 /* Debug */,
+				8DAD1AF22194F31500B113C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DAD1AD62194F31300B113C1 /* Project object */;
+}
